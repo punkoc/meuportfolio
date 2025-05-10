@@ -1,35 +1,28 @@
 .titulo-portfolio {
-  font-size: 48px;
   text-align: center;
-  word-break: break-word;
-  padding: 20px;
-  margin: 0 auto 30px auto;
-  width: 100%;
-  max-width: 900px;
+  font-size: 48px;
+  margin-bottom: 30px;
   background-color: #fffaf2;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
 }
 
 .titulo-portfolio-parte1 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 600;
-  color: #4f6d7a;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #3b6288;
 }
 
 .titulo-portfolio-parte2 {
   font-family: 'Rock Salt', cursive;
   color: #4a3f35;
+  display: block;
+  margin-top: 8px;
 }
 
 @media (max-width: 768px) {
   .titulo-portfolio {
-    font-size: 24px;
-    padding: 16px 12px;
-    margin: 0 10px 20px;
-  }
-
-  .titulo-portfolio-parte1,
-  .titulo-portfolio-parte2 {
-    display: block;
+    font-size: 28px;
   }
 }

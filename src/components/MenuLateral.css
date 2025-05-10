@@ -1,62 +1,99 @@
 .menu-lateral {
-  width: 200px;
-  background-color: #1f4e79; /* antes era #005caa */
+  width: 220px;
+  min-height: 100vh;
+  background-color: #3b6288;
   color: white;
   display: flex;
   flex-direction: column;
-  padding: 30px 20px;
+  padding: 40px 20px;
   box-sizing: border-box;
-  border-top-left-radius: 12px;
-  border-bottom-left-radius: 12px;
-}
-
-.menu-lateral .menu-topo {
-  font-weight: bold;
-  font-size: 20px;
 }
 
 .menu-lateral ul {
   list-style: none;
   padding: 0;
-  margin: 50px 0 0 0; /* empurra para baixo */
+  margin-top: 400px; /* ← ajusta a distância das opções pra baixo */
   display: flex;
   flex-direction: column;
   gap: 20px;
-  align-items: flex-start;
 }
 
-.menu-lateral li {
-  cursor: pointer;
+.menu-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
   padding: 10px;
   border-radius: 8px;
-  transition: background-color 0.3s;
+  transition: all 0.3s;
 }
 
-.menu-lateral li:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+.menu-link:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.menu-link.active {
+  background-color: rgba(255, 255, 255, 0.25);
+  font-weight: bold;
+}
+
+.icon {
+  font-size: 18px;
 }
 
 @media (max-width: 768px) {
   .menu-lateral {
-    width: 100%;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    gap: 20px;
-    border-radius: 12px 12px 0 0;
+    width: 100%;
+    min-height: auto;
+    padding: 15px 10px;
   }
 
+@media (max-width: 768px) {
   .menu-lateral ul {
+    margin-top: 0; /* no celular: volta ao normal */
     flex-direction: row;
     justify-content: center;
-    padding: 0;
-    margin: 0;
     gap: 15px;
   }
+}
 
-  .menu-lateral li {
+  .menu-link {
     font-size: 14px;
-    padding: 8px 10px;
+    padding: 8px;
   }
+}
+
+.theme-toggle {
+  margin-top: auto;
+  margin-left: 0;
+  margin-right: auto;
+  background: none;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 8px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.theme-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Ícones com transição suave */
+.theme-toggle .icon {
+  font-size: 16px;
+  transition: transform 0.3s;
+}
+
+.theme-toggle:hover .icon {
+  transform: rotate(20deg);
 }
