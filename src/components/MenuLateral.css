@@ -1,0 +1,37 @@
+.menu-lateral {
+  width: 200px;
+  background-color: #1f4e79; /* antes era #005caa */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.menu-lateral .menu-topo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.menu-lateral ul {
+  list-style: none;
+  padding: 0;
+  margin: 50px 0 0 0; /* empurra para baixo */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.menu-lateral li {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.menu-lateral li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
