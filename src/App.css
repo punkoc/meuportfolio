@@ -25,51 +25,15 @@ html, body, #root {
 
 .layout {
   display: flex;
+  flex-wrap: wrap; /* ← importante para empilhar no mobile */
   width: 100%;
-  max-width: 1100px;     /* largura máxima do bloco */
-  background-color: #fffaf2; /* tom harmonioso com o fundo */
+  max-width: 1100px;
+  background-color: #fffaf2;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-.menu-lateral {
-  width: 200px;
-  background-color: #005caa;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  padding: 30px 20px;
-  box-sizing: border-box;
-  border-top-left-radius: 12px;
-  border-bottom-left-radius: 12px;
-}
-
-.menu-lateral .menu-topo {
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.menu-lateral ul {
-  list-style: none;
-  padding: 0;
-  margin: 40px 0 0 0; /* <- AQUI empurra pra baixo */
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: flex-start;
-}
-
-.menu-lateral li {
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 8px;
-  transition: background-color 0.3s;
-}
-
-.menu-lateral li:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
 
 
 /* Conteúdo */
@@ -84,45 +48,87 @@ html, body, #root {
 /* Carrossel e Resumo */
 .carousel, .resumo {
   width: 100%;
-  max-width: 800px;
-  margin-bottom: 30px;
+  max-width: 700px; /* ← reduza esse valor pra mostrar mais fundo */
+  margin: 0 auto 30px;
 }
 
 .carousel-img {
-  width: 100%;
-  height: 350px;
-  object-fit: contain; /* mostra a imagem inteira */
+ width: 100%;
+  height: 300px;
+  object-fit: contain;
   border-radius: 12px;
-  background-color: #7d6f3a1c; /* opcional, aparece se a imagem for menor */
+  background-color: #00000010;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
 }
 .resumo {
-  color: #2b2b2b; /* antes era #333 */
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 20px;
   color: #333;
-  text-align: justify;
-  background-color: #fffaf2; /* tom harmonioso com o fundo */
-
-}
-.titulo-portfolio {
-  font-size: 64px;
-  text-align: center;
-  padding: 40px 20px;
-  border-radius: 16px;
-  width: 100%;
-  max-width: 1000px;
-  margin-bottom: 40px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
   background-color: #fffaf2;
+  border-radius: 12px;
+  text-align: justify;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
 }
 
-.titulo-portfolio-parte1 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 600;
-  color: #4f6d7a; /* azul petróleo claro */
+@media (max-width: 768px) {
+  .pagina-central {
+    padding: 20px 0;
+  }
+
+  .layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .conteudo {
+    padding: 20px 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .carousel-img {
+    height: 180px;
+  }
+
+  .resumo {
+    font-size: 15px;
+    padding: 15px;
+    margin: 0 10px;
+    line-height: 1.6;
+    max-width: 100%;
+  }
+
+@media (max-width: 768px) {
+  .carousel {
+    width: 100%;
+    max-width: 300px; /* força largura menor no mobile */
+    margin: 0 auto 20px;
+  }
+
+  .carousel-img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 12px;
+    background-color: #00000010;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  }
 }
-.titulo-portfolio-parte2 {
-  font-family: 'Rock Salt', cursive;
-  color: #4a3f35; /* café escuro */
 }
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+    align-items: center;
+    width: 90vw; /* ← deixa o layout mais estreito no celular */
+    max-width: 600px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
+
+

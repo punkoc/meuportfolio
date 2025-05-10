@@ -35,3 +35,28 @@
 .menu-lateral li:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
+
+@media (max-width: 768px) {
+  .menu-lateral {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .menu-lateral ul {
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 15px;
+  }
+
+  .menu-lateral li {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+}

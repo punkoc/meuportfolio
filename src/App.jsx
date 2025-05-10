@@ -3,6 +3,7 @@ import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import './App.css';
 import MenuLateral from './components/MenuLateral';
+import Header from './components/Header';
 
 const totalImagens = 6; // Altere para o número total que você tiver
 
@@ -21,10 +22,9 @@ function App() {
         <MenuLateral />
 
         <div className="conteudo">
-       <h1 className="titulo-portfolio">
-  <span className="titulo-portfolio-parte1">Portfólio<br></br></span>{' '}
-  <span className="titulo-portfolio-parte2">Bruno Ferreira</span>
-</h1>
+<Header />
+
+
 
           <div className="carousel">
             <AliceCarousel
