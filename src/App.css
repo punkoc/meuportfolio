@@ -74,6 +74,10 @@ html, body, #root {
 
 }
 
+.resumo h2 {
+  text-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.2);
+}
+
 @media (max-width: 768px) {
   .pagina-central {
     padding: 20px 0;

@@ -7,6 +7,8 @@
   flex-direction: column;
   padding: 40px 20px;
   box-sizing: border-box;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+
 }
 
 .menu-lateral ul {
@@ -16,6 +18,8 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+
 }
 
 .menu-link {
@@ -28,15 +32,21 @@
   padding: 10px;
   border-radius: 8px;
   transition: all 0.3s;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
 }
 
 .menu-link:hover {
   background-color: rgba(255, 255, 255, 0.15);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+
 }
 
 .menu-link.active {
   background-color: rgba(255, 255, 255, 0.25);
   font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+
 }
 
 .icon {
