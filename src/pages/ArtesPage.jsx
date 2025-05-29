@@ -86,7 +86,7 @@ function ArtesPage() {
             <div className="resumo">
               <h2>Artes em geral</h2>
               <p>
-                Aqui você pode compartilhar suas criações visuais — como ilustrações, capas de livros, cartazes e outros projetos autorais. É um espaço para mostrar a interseção entre arte e tecnologia no seu portfólio.
+                Minhas artes em geral
               </p>
             </div>
             <div className="gallery-container">
