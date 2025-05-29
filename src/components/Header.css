@@ -6,16 +6,12 @@
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.06);
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
-
 }
 
 .titulo-portfolio-parte1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   color: #3b6288;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
-
 }
 
 .titulo-portfolio-parte2 {
@@ -23,8 +19,6 @@
   color: #4a3f35;
   display: block;
   margin-top: 8px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
-
 }
 
 @media (max-width: 768px) {

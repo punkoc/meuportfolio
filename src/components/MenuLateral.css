@@ -7,19 +7,17 @@
   flex-direction: column;
   padding: 40px 20px;
   box-sizing: border-box;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
-
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
 }
 
 .menu-lateral ul {
   list-style: none;
   padding: 0;
-  margin-top: 400px; /* ← ajusta a distância das opções pra baixo */
+  margin-top: 400px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
-
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
 }
 
 .menu-link {
@@ -33,20 +31,17 @@
   border-radius: 8px;
   transition: all 0.3s;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-
 }
 
 .menu-link:hover {
   background-color: rgba(255, 255, 255, 0.15);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
-
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
 }
 
 .menu-link.active {
   background-color: rgba(255, 255, 255, 0.25);
   font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
-
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
 }
 
 .icon {
@@ -62,15 +57,15 @@
     min-height: auto;
     padding: 15px 10px;
   }
+}
 
 @media (max-width: 768px) {
   .menu-lateral ul {
-    margin-top: 0; /* no celular: volta ao normal */
+    margin-top: 0;
     flex-direction: row;
     justify-content: center;
     gap: 15px;
   }
-}
 
   .menu-link {
     font-size: 14px;
@@ -98,7 +93,6 @@
   background-color: rgba(255, 255, 255, 0.15);
 }
 
-/* Ícones com transição suave */
 .theme-toggle .icon {
   font-size: 16px;
   transition: transform 0.3s;
